@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/ScreenFocus.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "person focus on solving a problem";
 
 /**
  * Project list
@@ -31,35 +31,35 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Docker Deployment Workflow for Laravel App",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "It involves developing and implementing a systematic process for deploying a Laravel application using Docker, we design a Docker image that includes the required components, such as the PHP runtime, web server, and Laravel framework. We carefully configure the image to ensure seamless compatibility with the application.",
+    url: "https://github.com/Bolasto/Docker-Deployment-Workflow-for-Laravel-App",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Terraform for Infrastructure as Code on AWS",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "The goal is to set up a private network infrastructure on AWS, interconnecting multiple instances, and making it accessible to users through a load balancer and a Route53 domain.",
+    url: "https://github.com/Bolasto/Terraform-for-Infrastructure-as-Code-on-AWS/tree/main",
   },
   {
-    title: "My Resume Site",
+    title: "Docker Deployment for a React App",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "A Single react app and Socks app deployment on Amazon EKS using Terraform as the configuration management tool and Helm charts to help manage Kubernetes applications on ArgoCD using both Prometheus and Gafara as monitoring tools with a CI/CD pipeline also with GitHub Actions.",
+    url: "https://github.com/Bolasto/altschool-final-exam",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Javascript Test",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Taking different Challenges, Actively participating in coding challenges, hackathons, and open-source projects, These experiences sharpen my problem-solving skills, encourage collaboration, and foster innovation in my approach to JavaScript development .",
+    url: "https://github.com/Bolasto/Ogunmola-Rofiat-assignment-02",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+    <section className="padding" id="portfolio" style={{backgroundColor:"#45a6d6", color: "black"}}>
+      <h2 style={{ textAlign: "center" }}><strong> Portfolio </strong></h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
