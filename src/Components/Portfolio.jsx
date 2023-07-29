@@ -58,8 +58,14 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio" style={{backgroundColor:"#45a6d6", color: "black"}}>
-      <h2 style={{ textAlign: "center" }}><strong> Portfolio </strong></h2>
+    <section
+      className="padding"
+      id="portfolio"
+      style={{ backgroundColor: "#45a6d6", color: "black" }}
+    >
+      <h2 style={{ textAlign: "center" }}>
+        <strong> Portfolio </strong>
+      </h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img

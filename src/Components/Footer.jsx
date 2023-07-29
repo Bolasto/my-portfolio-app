@@ -61,7 +61,7 @@ const Footer = (props) => {
         }}
       >
         {email && (
-          <a href={`mailto:${email}`}>
+          <a href={`mailto:@${email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
           </a>
         )}
@@ -104,11 +104,7 @@ const Footer = (props) => {
           </a>
         )}
         {youTube && (
-          <a
-            href={`https://www.youtube.com/c/${youTube}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={`https://www.youtube.com/${youTube}`} target="_blank" rel="noopener noreferrer">
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}

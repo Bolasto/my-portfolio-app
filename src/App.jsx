@@ -26,10 +26,10 @@ import "./styles.css";
 const siteProps = {
   name: "Ogunmola Rofiat",
   title: "Cloud Engineer",
-  email: "mobolatitoo@gmail.com",
+  email: "mobolatitoo",
   gitHub: "Bolasto",
   instagram: "tittooo___",
-  linkedIn: "Ogunmola Rofiat",
+  linkedIn: "ogunmola-rofiat-901512163",
   medium: "mobolatitoo",
   twitter: "@bolasto2",
   youTube: "@rofiatogunmola812",
