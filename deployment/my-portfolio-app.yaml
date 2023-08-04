@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-portfolio-app
+  namespace: deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-portfolio-app
+  template:
+    metadata:
+      labels:
+        app: my-portfolio-app
+    spec:
+      containers:
+      - name: my-portfolio-app
+        image: ghcr.io/bolasto/my-portfolio-app
+
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
+          requests:
+            cpu: "0.5"
+            memory: "512Mi"
+        ports:
+        - containerPort: 8081
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-portfolio-app
+  namespace: deployment
+
+spec:
+  selector:
+    app: my-portfolio-app
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
